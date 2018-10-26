@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="513dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".WiFiDirectActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+        <fragment
+            android:id="@+id/frag_list"
+            class="com.example.dhyey.codefundoapp.ui.DeviceListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            tools:layout="@layout/device_list_fragment">
+
+            <!-- Preview: layout=@layout/row_devices -->
+        </fragment>
+
+        <fragment
+            android:id="@+id/frag_detail"
+            class="com.example.dhyey.codefundoapp.ui.DeviceDetailFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.95"
+            tools:layout="@layout/device_detail_fragment">
+
+            <!-- Preview: layout=@layout/device_detail -->
+        </fragment>
+
+    <Button
+        android:id="@+id/btn_switch"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/group_chat" />
+
+    </LinearLayout>

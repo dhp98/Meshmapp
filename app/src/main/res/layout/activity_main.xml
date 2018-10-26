@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="117dp"
+    tools:layout_editor_absoluteY="95dp">
+
+    <!--<TextView-->
+    <!--style="@style/header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="meshNYC"-->
+    <!--android:textSize="50sp"-->
+    <!--android:layout_weight="4"/>-->
+
+
+    <Button
+        android:id="@+id/messages"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="@string/messaging"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/map"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="map"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/contact_invite_button"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="invite contacts" />
+
+
+</LinearLayout>
+
